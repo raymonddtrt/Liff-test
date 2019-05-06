@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,12 +19,14 @@
             //顯示UserId
             $('#userid').val(data.context.userId);
         }
+
         //ready
         $(function () {
             //init LIFF
             liff.init(function (data) {
                 initializeApp(data);
             });
+
             //ButtonGetProfile
             $('#ButtonGetProfile').click(function () {
                 //取得User Proile
@@ -36,6 +39,7 @@
                     }
                 );
             });
+
             //ButtonSendMsg
             $('#ButtonSendMsg').click(function () {
                 liff.sendMessages([
